@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class Ajaxcalls {
@@ -31,5 +32,13 @@ public class Ajaxcalls {
 	        WebElement lodedElement=   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='AJAX Content Loaded']//parent::div")));
 	
 	        System.out.println(lodedElement.getText());
+	        
+	        
+	    }
+
+	    
+	    @AfterMethod
+	    public void teardown() {
+	    	driver.quit();
 }
 }
