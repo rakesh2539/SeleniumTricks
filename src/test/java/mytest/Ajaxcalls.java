@@ -33,7 +33,6 @@ public class Ajaxcalls {
 	
 	        System.out.println(lodedElement.getText());
 	        
-	        //The test case is passed
 	        
 	        System.out.println("The Test case is passed");
 	        
